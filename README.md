@@ -16,7 +16,7 @@ This is the server-side component of your application. It serves as the backend 
 
 1. Clone this repository:
 
-   \`\`\`bash
+   \`\`\`
    git clone <repository-url>
    \`\`\`
 
