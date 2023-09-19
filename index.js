@@ -24,13 +24,10 @@ const port = 5000; // You can change this port if needed
 app.use(cors());
 app.use(express.json());
 app.use(bodyParser.json());
+app.use(cors({
+  origin: 'http://localhost:3000',
+}));
 
-const corsOptions = {
-  origin: 'http://localhost:3000', // Replace with your frontend URL
-  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
-};
-
-app.use(cors(corsOptions));
 
 // Connect to MongoDB using your MongoDB URI
 const mongoURI = process.env.MONGO_URI;
