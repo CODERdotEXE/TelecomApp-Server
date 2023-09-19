@@ -2,7 +2,7 @@
 cat > README.md <<EOL
 # Server-Side Application
 
-This is the server-side component of your application. It serves as the backend for handling various functionalities.
+This is the server-side component of Telecom application. It serves as the backend for handling various functionalities.
 
 ## Table of Contents
 - [Installation](#installation)
