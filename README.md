@@ -22,7 +22,7 @@ This is the server-side component of your application. It serves as the backend 
 
 2. Install dependencies using npm:
 
-   \`\`\`bash
+   \`\`\`
    npm install
    \`\`\`
 
@@ -42,7 +42,7 @@ Make sure to replace \`your-mongodb-uri-here\` with your actual MongoDB connecti
 
 You can start the server using the following command:
 
-\`\`\`bash
+\`\`\`
 npm start
 \`\`\`
 
@@ -60,7 +60,7 @@ Here are the dependencies used in this project and their installation commands:
 
   Installation:
 
-  \`\`\`bash
+  \`\`\`
   npm install express
   \`\`\`
 
@@ -68,7 +68,7 @@ Here are the dependencies used in this project and their installation commands:
 
   Installation:
 
-  \`\`\`bash
+  \`\`\`
   npm install mongoose
   \`\`\`
 
@@ -76,7 +76,7 @@ Here are the dependencies used in this project and their installation commands:
 
   Installation:
 
-  \`\`\`bash
+  \`\`\`
   npm install cors
   \`\`\`
 
@@ -84,7 +84,7 @@ Here are the dependencies used in this project and their installation commands:
 
   Installation:
 
-  \`\`\`bash
+  \`\`\`
   npm install body-parser
   \`\`\`
 
@@ -92,7 +92,7 @@ Here are the dependencies used in this project and their installation commands:
 
   Installation:
 
-  \`\`\`bash
+  \`\`\`
   npm install dotenv
   \`\`\`
 
@@ -100,7 +100,7 @@ Here are the dependencies used in this project and their installation commands:
 
   Installation:
 
-  \`\`\`bash
+  \`\`\`
   npm install multer
   \`\`\`
 
@@ -117,5 +117,5 @@ If you'd like to contribute to this project, please follow these steps:
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-EOL
+
 
