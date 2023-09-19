@@ -1,6 +1,4 @@
-#!/bin/bash
 
-# Create the README.md file
 cat > README.md <<EOL
 # Server-Side Application
 
