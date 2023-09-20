@@ -389,5 +389,5 @@ app.get('/api/admin/sessionStartTime', async (req, res) => {
 
 
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+  console.log('Server is connected to MongoDB... Telecom Backend is Running');
 });
