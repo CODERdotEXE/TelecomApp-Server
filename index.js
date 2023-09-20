@@ -24,6 +24,7 @@ const port = 5000; // You can change this port if needed
 app.use(cors());
 app.use(express.json());
 app.use(bodyParser.json());
+
 app.use(cors({
   origin: 'http://localhost:3000',
 }));
@@ -31,13 +32,13 @@ app.use(cors({
 
 // Connect to MongoDB using your MongoDB URI
 const mongoURI = process.env.MONGO_URI;
- // Replace with your MongoDB URI
+
 mongoose.connect(mongoURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
 
-// Define your schema and model for plans
+//schema and model for plans
 const planSchema = new mongoose.Schema({
   "planID": {
     type: Number,
@@ -71,6 +72,7 @@ app.get('/api/plans', async (req, res) => {
     res.status(500).json({ error: 'Error fetching plans' });
   }
 });
+
 //API endpoint to save new plans and add a plan ID
 app.post('/api/plans', async (req, res) => {
   try {
@@ -96,6 +98,7 @@ app.post('/api/plans', async (req, res) => {
     res.status(500).json({ error: 'Error adding plan' });
   }
 });
+
 // API endpoint to delete a plan by ID
 app.delete('/api/plans/:id', async (req, res) => {
   try {
@@ -112,7 +115,6 @@ app.delete('/api/plans/:id', async (req, res) => {
     res.status(500).json({ error: 'Error deleting plan', details: error.message });
   }
 });
-
 
 
 // Define your schema and model for profiles
@@ -181,6 +183,7 @@ function generateCustomerID() {
   const random = Math.floor(Math.random() * 1000);
   return `BSNL${year}${month}${time}${random}`;
 }
+
 
 
 // API endpoint to handle feedback submissions
