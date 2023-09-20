@@ -3,20 +3,20 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const Feedback = require('../models/feedbackModel'); // Import the Feedback model
+const Feedback = require('./models/feedbackModel'); // Import the Feedback model
 require('dotenv').config(); // Load environment variables from .env file
 
 // Your other imports and configurations...
 
-const Transaction = require('../models/transactionModel'); // Import the Transaction model
+const Transaction = require('./models/transactionModel'); // Import the Transaction model
 const bodyParser = require('body-parser');
 const router = express.Router();
 const config = require('./config');
-const AdminSession = require('../models/adminSessionModel');
+const AdminSession = require('./models/adminSessionModel');
 const requestIp = require('request-ip'); 
 const path = require('path');
 const multer = require('multer');
-const Complaint = require('../models/complaintModel');
+const Complaint = require('./models/complaintModel');
 
 const app = express();
 const port = 5000; // You can change this port if needed
